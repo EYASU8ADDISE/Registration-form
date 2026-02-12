@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+
+    .form-container {
+      width: 420px;
+      background: #ffffff;
+      margin: 50px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-bottom: 15px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      font-weight: normal;
+      margin-right: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+    <p>Please fill in your details</p>
+
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+
+      <label>Favorite Color</label>
+      <input type="color">
+
+      <label>Date of Birth</label>
+      <input type="date">
+
+      <label>Upload CV</label>
+      <input type="file">
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter phone number">
+
+      <label>Password</label>
+      <input type="password" placeholder="Enter password">
+
+      <label>Experience Level</label>
+      <input type="range">
+
+      <label>Search</label>
+      <input type="search" placeholder="Search here">
+
+      <label>Available Time</label>
+      <input type="time">
+
+      <label>Skills</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> HTML</label>
+        <label><input type="checkbox"> CSS</label>
+        <label><input type="checkbox"> JavaScript</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
